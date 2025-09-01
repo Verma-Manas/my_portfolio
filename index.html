@@ -6,7 +6,7 @@
   <title>Manas Verma | Portfolio</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
-    html { scroll-behavior: smooth; } /* Smooth Scroll */
+    html { scroll-behavior: smooth; }
     body {
       font-family: "Poppins", sans-serif;
       background:#ffffff;
@@ -37,7 +37,6 @@
     /* Hero */
     .hero {
       height:100vh;
-      width:100%;
       display:flex;
       justify-content:center;
       align-items:center;
@@ -46,12 +45,7 @@
       padding:0 20px;
       color:var(--blue);
     }
-    .hero-text {
-      flex:1; 
-      z-index:2; 
-      padding-left:50px; /* Left padding */
-      padding-right:40px;
-    }
+    .hero-text {flex:1; z-index:2; padding-left:50px; padding-right:40px;}
     .hero-text h2 {font-size:3rem;margin-bottom:10px;}
     .hero-text h2 span {color:var(--yellow);}
     .hero-text p {font-size:1.2rem;margin-bottom:20px;}
@@ -61,14 +55,11 @@
     }
     .hero-text a:hover {background:var(--yellow); color:var(--blue);}
     
-    /* Socials */
     .socials {margin-top:20px;display:flex;gap:15px;}
     .socials a {
       font-size:1rem; font-weight:bold;
-      color:#fff;
-      background:var(--blue);
-      padding:12px;
-      border-radius:50%;
+      color:#fff;background:var(--blue);
+      padding:12px;border-radius:50%;
       display:flex;align-items:center;justify-content:center;
       transition:.3s;
     }
@@ -85,42 +76,23 @@
     }
     .hero-img img:hover {transform:scale(1.05);}
 
-    #particles-js {
-      position:absolute;top:0;left:0;width:100%;height:100%;
-      z-index:0;
-    }
+    #particles-js {position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;}
 
     /* Sections */
-    section {
-      padding:80px 60px;
-      width:100%;
-      text-align:center;
-    }
-    section h2 {
-      font-size:2.2rem;margin-bottom:40px;
-      position:relative;color:var(--blue);
-    }
-    section h2::after {
-      content:"";display:block;width:70px;height:4px;
-      background:var(--yellow);margin:12px auto 0;border-radius:2px;
-    }
+    section {padding:80px 60px;width:100%;text-align:center;}
+    section h2 {font-size:2.2rem;margin-bottom:40px;color:var(--blue);}
+    section h2::after {content:"";display:block;width:70px;height:4px;background:var(--yellow);margin:12px auto 0;border-radius:2px;}
     section p {max-width:900px;margin:auto;font-size:1.1rem;line-height:1.6;}
 
     /* Skills */
     .skills {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-    .skills div {
-      background:var(--yellow);color:var(--blue);
-      padding:15px 25px;border-radius:25px;font-weight:600;transition:.3s;
-    }
+    .skills div {background:var(--yellow);color:var(--blue);padding:15px 25px;border-radius:25px;font-weight:600;transition:.3s;}
     .skills div:hover {transform:scale(1.1);background:#ffd60a;}
 
     /* Timeline */
     .timeline {border-left:4px solid var(--yellow);padding-left:20px;text-align:left;max-width:900px;margin:auto;}
     .timeline div {margin-bottom:30px;position:relative;}
-    .timeline div::before {
-      content:"";position:absolute;left:-32px;top:8px;width:16px;height:16px;
-      background:var(--blue);border-radius:50%;border:3px solid var(--yellow);
-    }
+    .timeline div::before {content:"";position:absolute;left:-32px;top:8px;width:16px;height:16px;background:var(--blue);border-radius:50%;border:3px solid var(--yellow);}
     .timeline h3 {color:var(--blue);}
     .timeline a {color:var(--yellow);font-weight:600;text-decoration:none;}
     .timeline a:hover {text-decoration:underline;}
@@ -158,7 +130,7 @@
       <a href="#about">About Me ↓</a>
       <div class="socials">
         <a href="https://www.linkedin.com/in/manas-verma-5322a4260/" target="_blank">in</a>
-        <a href="https://github.com/" target="_blank">GH</a>
+        <a href="https://github.com/Verma-Manas" target="_blank">GH</a>
         <a href="mailto:vermamanas79@gmail.com">✉</a>
       </div>
     </div>
@@ -170,7 +142,7 @@
   <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a Computer Science student at MIET Jammu (AI-ML specialization, CGPA: <b>8.5</b>). Passionate about AI/ML & Full Stack Development, always eager to learn and build impactful projects.</p>
+    <p>I’m a Computer Science student at MIET Jammu (AI-ML specialization, CGPA: <b>8.5</b>). Passionate about AI, Data Science, and Full Stack Development, always eager to learn and build impactful projects.</p>
   </section>
 
   <!-- Skills -->
@@ -178,13 +150,16 @@
     <h2>Skills</h2>
     <div class="skills">
       <div>Python</div>
+      <div>C++</div>
+      <div>JavaScript</div>
       <div>React</div>
       <div>Node.js</div>
       <div>Express.js</div>
       <div>MongoDB</div>
       <div>MySQL</div>
-      <div>Artificial Intelligence</div>
+      <div>AI</div>
       <div>Machine Learning</div>
+      <div>Deep Learning</div>
       <div>Data Science</div>
     </div>
   </section>
@@ -194,36 +169,40 @@
     <h2>Projects</h2>
     <div class="timeline">
       <div>
-        <h3><a href="https://drive.google.com/file/d/11p9qvCj0acDeIv21eKJzVEPlpQ2XK-0o/view" target="_blank">E-Commerce Website</a></h3>
-        <p>Full-stack MERN app for online shopping with payment integration.</p>
+        <h3><a href="https://drive.google.com/file/d/11p9qvCj0acDeIv21eKJzVEPlpQ2XK-0o/view" target="_blank">E-commerce Website Clone</a></h3>
+        <p>MERN stack with AI-powered recommendation system, payment gateway API, and an LLM-based chatbot.</p>
       </div>
       <div>
-        <h3><a href="https://drive.google.com/file/d/1AD8JiPlSbDzRhT1dHdBi_Bg8umW6t97H/view" target="_blank">Startup Frontend</a></h3>
-        <p>React-based frontend for a startup project.</p>
+        <h3><a href="https://drive.google.com/file/d/1AD8JiPlSbDzRhT1dHdBi_Bg8umW6t97H/view" target="_blank">Startup Homepage</a></h3>
+        <p>Designed and developed a fully responsive homepage in React.js and CSS within a day.</p>
       </div>
       <div>
-        <h3><a href="https://drive.google.com/file/d/14H9px6QNpJ8RvbLsS8rSJVs9Srex_6gl/view" target="_blank">VOXX</a></h3>
-        <p>Social interaction and networking platform.</p>
+        <h3><a href="https://drive.google.com/file/d/14H9px6QNpJ8RvbLsS8rSJVs9Srex_6gl/view" target="_blank">VOXX – Voice-Controlled AI Assistant</a></h3>
+        <p>Python + Streamlit-based assistant with speech recognition, Wikipedia search, and web control.</p>
       </div>
       <div>
         <h3><a href="https://crie.mietjmu.in/" target="_blank">CIIE Website</a></h3>
-        <p>Website for MIET’s incubation and entrepreneurship cell.</p>
+        <p>Live website for MIET’s incubation cell with modular frontend and API integration.</p>
       </div>
       <div>
-        <h3>PetPulse (Flutter, AI/ML) – Ongoing</h3>
-        <p>Lifecycle management app with AI chatbot and patented backend.</p>
+        <h3>Basic Inventory Management</h3>
+        <p>CRUD-based inventory system with ASP.NET and SQL, enabling smooth frontend-backend flow.</p>
+      </div>
+      <div>
+        <h3>PetPulse</h3>
+        <p>Patented project: Flutter app with AI chatbot and lifecycle management features.</p>
       </div>
       <div>
         <h3>Programming Pathshala Frontend</h3>
-        <p>Responsive single-page React app with dynamic course modules.</p>
+        <p>Single-page React app with dynamic course components.</p>
       </div>
       <div>
         <h3>College Database System</h3>
-        <p>MySQL-based CRUD + optimized relational DB.</p>
+        <p>MySQL project with CRUD, joins, and query optimization.</p>
       </div>
       <div>
         <h3>Suicide Prediction Model</h3>
-        <p>ML model predicting suicide risk based on behavior patterns.</p>
+        <p>ML model in Python (Scikit-learn) predicting suicide risk based on behavioral patterns.</p>
       </div>
     </div>
   </section>
@@ -233,20 +212,29 @@
     <h2>Experience</h2>
     <div class="timeline">
       <div>
-        <h3>Summer Intern - Celebal Technologies | Remote, WFH | Jun 2025 – Aug 2025 (Expected)</h3>
-        <p>Working on weekly React.js assignments and Service Desk Application projects.</p>
+        <h3>Summer Intern – Celebal Technologies</h3>
+        <p>Remote | Jun 2025 – Aug 2025 (Expected)</p>
+        <p>Worked on weekly React.js assignments and Service Desk Application projects.</p>
       </div>
       <div>
-        <h3>Intern – Director Internship, MIET Jammu | Nov 2024 – Present</h3>
-        <p>Selected in top 2% for internship, contributed to features in the AI/Blockchain-based platform.</p>
+        <h3>Intern – Director Internship, MIET Jammu</h3>
+        <p>Nov 2024 – Present</p>
+        <p>Top 2% selection, contributed to AI/Blockchain platform features.</p>
       </div>
       <div>
-        <h3>MERN Stack Intern – Programming Pathshala | Onsite Noida | Jul 2024 – Aug 2024</h3>
-        <p>Built full-stack web apps using MERN stack with API development and routing.</p>
+        <h3>MERN Stack Intern – Programming Pathshala</h3>
+        <p>Onsite, Noida | Jul 2024 – Aug 2024</p>
+        <p>Built full-stack MERN apps with REST API development and routing.</p>
       </div>
       <div>
-        <h3>ACM Head of Operations – MIET Student Chapter | Oct 2024 – Present</h3>
-        <p>Handled event logistics and chapter operations.</p>
+        <h3>ACM Head of Operations – MIET Student Chapter</h3>
+        <p>Oct 2024 – Present</p>
+        <p>Handled event logistics, planning, and operations.</p>
+      </div>
+      <div>
+        <h3>Volunteer – GDSC MIET</h3>
+        <p>Jan 2024 – Oct 2024</p>
+        <p>Organized tech events, managed designs, and community support.</p>
       </div>
     </div>
   </section>
@@ -257,11 +245,11 @@
     <div class="timeline">
       <div>
         <h3>MIET Jammu</h3>
-        <p>B.Tech CSE (AI-ML Specialization), CGPA: 8.5</p>
+        <p>B.Tech CSE (AI-ML), CGPA: 8.5 (Aug 2022 – Jun 2026 expected)</p>
       </div>
       <div>
-        <h3>Schooling</h3>
-        <p>Completed 12th with distinction in PCM stream.</p>
+        <h3>Indira Public Hr. Sec. School, Jammu</h3>
+        <p>12th – PCM – 89.4% (2022) | 10th – 89.6% (2020)</p>
       </div>
     </div>
   </section>
@@ -270,21 +258,11 @@
   <section id="certifications">
     <h2>Certifications</h2>
     <div class="timeline">
-      <div>
-        <h3>Coursera Deep Learning Specialization</h3>
-      </div>
-      <div>
-        <h3>Coursera ML Foundations: A Case Study Approach</h3>
-      </div>
-      <div>
-        <h3>NPTEL Business Analytics for Management Decision</h3>
-      </div>
-      <div>
-        <h3>NPTEL Design & Implementation of Human-Computer Interfaces</h3>
-      </div>
-      <div>
-        <h3>NPTEL The Joy of Computing with Python</h3>
-      </div>
+      <div><h3>Coursera Deep Learning Specialization</h3></div>
+      <div><h3>Coursera ML Foundations: A Case Study Approach</h3></div>
+      <div><h3>NPTEL Business Analytics for Management Decision</h3></div>
+      <div><h3>NPTEL Design & Implementation of Human-Computer Interfaces</h3></div>
+      <div><h3>NPTEL The Joy of Computing with Python</h3></div>
     </div>
   </section>
 
@@ -293,6 +271,7 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:vermamanas79@gmail.com">vermamanas79@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/manas-verma-5322a4260/" target="_blank">linkedin.com/in/manas-verma</a></p>
+    <p>GitHub: <a href="https://github.com/Verma-Manas" target="_blank">github.com/Verma-Manas</a></p>
   </section>
 
   <footer>
@@ -305,7 +284,7 @@
     particlesJS("particles-js", {
       "particles": {
         "number": {"value":80,"density":{"enable":true,"value_area":800}},
-        "color":{"value":["#1d3557", "#457b9d"]}, /* Dark + Light Blue */
+        "color":{"value":["#1d3557", "#457b9d"]},
         "line_linked":{"enable":true,"distance":150,"color":"#457b9d","opacity":0.4,"width":1},
         "move":{"enable":true,"speed":3}
       },
