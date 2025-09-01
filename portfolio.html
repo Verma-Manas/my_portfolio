@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manas Verma | Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html { scroll-behavior: smooth; } /* Smooth Scroll */
+    body {
+      font-family: "Poppins", sans-serif;
+      background:#ffffff;
+      overflow-x:hidden;
+      color:#1d3557;
+    }
+
+    :root {
+      --blue: #1d3557;
+      --blue-light: #457b9d;
+      --yellow: #f1c40f;
+      --white: #ffffff;
+    }
+
+    /* Navbar */
+    header {
+      background:#fff;
+      padding:15px 40px;
+      display:flex;justify-content:space-between;align-items:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      position:sticky;top:0;z-index:100;
+    }
+    header h1 {color:var(--blue); font-size:1.5rem;}
+    nav ul {display:flex;gap:25px; list-style:none;}
+    nav a {text-decoration:none; color:var(--blue); font-weight:500; transition:.3s;}
+    nav a:hover {color:var(--yellow);}
+
+    /* Hero */
+    .hero {
+      height:100vh;
+      width:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:left;
+      position:relative;
+      padding:0 20px;
+      color:var(--blue);
+    }
+    .hero-text {
+      flex:1; 
+      z-index:2; 
+      padding-left:50px; /* Left padding */
+      padding-right:40px;
+    }
+    .hero-text h2 {font-size:3rem;margin-bottom:10px;}
+    .hero-text h2 span {color:var(--yellow);}
+    .hero-text p {font-size:1.2rem;margin-bottom:20px;}
+    .hero-text a {
+      background:var(--blue); color:#fff; padding:12px 25px; border-radius:30px;
+      font-weight:600; transition:.3s;
+    }
+    .hero-text a:hover {background:var(--yellow); color:var(--blue);}
+    
+    /* Socials */
+    .socials {margin-top:20px;display:flex;gap:15px;}
+    .socials a {
+      font-size:1rem; font-weight:bold;
+      color:#fff;
+      background:var(--blue);
+      padding:12px;
+      border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      transition:.3s;
+    }
+    .socials a:hover {background:var(--yellow); color:var(--blue);}
+
+    .hero-img {flex:1;display:flex;justify-content:center;z-index:2;}
+    .hero-img img {
+      width:320px;height:320px;
+      object-fit:cover;
+      border-radius:50%;
+      border:5px solid var(--yellow);
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+      transition:.4s;
+    }
+    .hero-img img:hover {transform:scale(1.05);}
+
+    #particles-js {
+      position:absolute;top:0;left:0;width:100%;height:100%;
+      z-index:0;
+    }
+
+    /* Sections */
+    section {
+      padding:80px 60px;
+      width:100%;
+      text-align:center;
+    }
+    section h2 {
+      font-size:2.2rem;margin-bottom:40px;
+      position:relative;color:var(--blue);
+    }
+    section h2::after {
+      content:"";display:block;width:70px;height:4px;
+      background:var(--yellow);margin:12px auto 0;border-radius:2px;
+    }
+    section p {max-width:900px;margin:auto;font-size:1.1rem;line-height:1.6;}
+
+    /* Skills */
+    .skills {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+    .skills div {
+      background:var(--yellow);color:var(--blue);
+      padding:15px 25px;border-radius:25px;font-weight:600;transition:.3s;
+    }
+    .skills div:hover {transform:scale(1.1);background:#ffd60a;}
+
+    /* Timeline */
+    .timeline {border-left:4px solid var(--yellow);padding-left:20px;text-align:left;max-width:900px;margin:auto;}
+    .timeline div {margin-bottom:30px;position:relative;}
+    .timeline div::before {
+      content:"";position:absolute;left:-32px;top:8px;width:16px;height:16px;
+      background:var(--blue);border-radius:50%;border:3px solid var(--yellow);
+    }
+    .timeline h3 {color:var(--blue);}
+    .timeline a {color:var(--yellow);font-weight:600;text-decoration:none;}
+    .timeline a:hover {text-decoration:underline;}
+    .timeline p {margin:5px 0;color:#333;}
+
+    /* Contact */
+    .contact {background:var(--blue);color:var(--white);padding:60px 20px;}
+    .contact a {color:var(--yellow); font-weight:600;}
+    footer {background:#14213d;color:#aaa;text-align:center;padding:15px;}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Manas Verma</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-text">
+      <h2>Hi There,<br> I'm <span>Manas Verma</span></h2>
+      <p>Aspiring AI/ML Engineer | MERN Developer | CSE Student @ MIET Jammu</p>
+      <a href="#about">About Me ↓</a>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/manas-verma-5322a4260/" target="_blank">in</a>
+        <a href="https://github.com/" target="_blank">GH</a>
+        <a href="mailto:vermamanas79@gmail.com">✉</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://i.ibb.co/8HJ474M/Whats-App-Image-2025-09-01-at-15-37-32-4a0c8ba4.jpg" alt="Manas Verma">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a Computer Science student at MIET Jammu (AI-ML specialization, CGPA: <b>8.5</b>). Passionate about AI/ML & Full Stack Development, always eager to learn and build impactful projects.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>Python</div>
+      <div>React</div>
+      <div>Node.js</div>
+      <div>Express.js</div>
+      <div>MongoDB</div>
+      <div>MySQL</div>
+      <div>Artificial Intelligence</div>
+      <div>Machine Learning</div>
+      <div>Data Science</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="timeline">
+      <div>
+        <h3><a href="https://drive.google.com/file/d/11p9qvCj0acDeIv21eKJzVEPlpQ2XK-0o/view" target="_blank">E-Commerce Website</a></h3>
+        <p>Full-stack MERN app for online shopping with payment integration.</p>
+      </div>
+      <div>
+        <h3><a href="https://drive.google.com/file/d/1AD8JiPlSbDzRhT1dHdBi_Bg8umW6t97H/view" target="_blank">Startup Frontend</a></h3>
+        <p>React-based frontend for a startup project.</p>
+      </div>
+      <div>
+        <h3><a href="https://drive.google.com/file/d/14H9px6QNpJ8RvbLsS8rSJVs9Srex_6gl/view" target="_blank">VOXX</a></h3>
+        <p>Social interaction and networking platform.</p>
+      </div>
+      <div>
+        <h3><a href="https://crie.mietjmu.in/" target="_blank">CIIE Website</a></h3>
+        <p>Website for MIET’s incubation and entrepreneurship cell.</p>
+      </div>
+      <div>
+        <h3>PetPulse (Flutter, AI/ML) – Ongoing</h3>
+        <p>Lifecycle management app with AI chatbot and patented backend.</p>
+      </div>
+      <div>
+        <h3>Programming Pathshala Frontend</h3>
+        <p>Responsive single-page React app with dynamic course modules.</p>
+      </div>
+      <div>
+        <h3>College Database System</h3>
+        <p>MySQL-based CRUD + optimized relational DB.</p>
+      </div>
+      <div>
+        <h3>Suicide Prediction Model</h3>
+        <p>ML model predicting suicide risk based on behavior patterns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div>
+        <h3>Summer Intern - Celebal Technologies | Remote, WFH | Jun 2025 – Aug 2025 (Expected)</h3>
+        <p>Working on weekly React.js assignments and Service Desk Application projects.</p>
+      </div>
+      <div>
+        <h3>Intern – Director Internship, MIET Jammu | Nov 2024 – Present</h3>
+        <p>Selected in top 2% for internship, contributed to features in the AI/Blockchain-based platform.</p>
+      </div>
+      <div>
+        <h3>MERN Stack Intern – Programming Pathshala | Onsite Noida | Jul 2024 – Aug 2024</h3>
+        <p>Built full-stack web apps using MERN stack with API development and routing.</p>
+      </div>
+      <div>
+        <h3>ACM Head of Operations – MIET Student Chapter | Oct 2024 – Present</h3>
+        <p>Handled event logistics and chapter operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div>
+        <h3>MIET Jammu</h3>
+        <p>B.Tech CSE (AI-ML Specialization), CGPA: 8.5</p>
+      </div>
+      <div>
+        <h3>Schooling</h3>
+        <p>Completed 12th with distinction in PCM stream.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="timeline">
+      <div>
+        <h3>Coursera Deep Learning Specialization</h3>
+      </div>
+      <div>
+        <h3>Coursera ML Foundations: A Case Study Approach</h3>
+      </div>
+      <div>
+        <h3>NPTEL Business Analytics for Management Decision</h3>
+      </div>
+      <div>
+        <h3>NPTEL Design & Implementation of Human-Computer Interfaces</h3>
+      </div>
+      <div>
+        <h3>NPTEL The Joy of Computing with Python</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vermamanas79@gmail.com">vermamanas79@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/manas-verma-5322a4260/" target="_blank">linkedin.com/in/manas-verma</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Manas Verma | All Rights Reserved</p>
+  </footer>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {"value":80,"density":{"enable":true,"value_area":800}},
+        "color":{"value":["#1d3557", "#457b9d"]}, /* Dark + Light Blue */
+        "line_linked":{"enable":true,"distance":150,"color":"#457b9d","opacity":0.4,"width":1},
+        "move":{"enable":true,"speed":3}
+      },
+      "interactivity": {"events": {"onhover":{"enable":true,"mode":"repulse"}}}
+    });
+  </script>
+</body>
+</html>
